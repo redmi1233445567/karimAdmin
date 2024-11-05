@@ -129,7 +129,7 @@ export default function Home() {
       <div className="w-full h-[200px] bg-black text-white font-bold flex justify-center items-center text-3xl">
         <h1>Order management</h1>
       </div>
-      <div className="flex justify-between border-b-2 border-black px-10 mx-3 my-14">
+      <div className="flex justify-between border-b-2 border-black sm:px-10 px-3 sm:mx-3 mx-1 my-14 sm:text-lg text-[14px]">
         <p
           onClick={handleAll}
           ref={all}
@@ -167,11 +167,11 @@ export default function Home() {
             filteredBooked.map((item, ind) => (
               <div
                 key={ind}
-                className="mb-4 flex gap-5 items-center border-[1px] border-gray-600 rounded-lg p-2 mx-4 hover:bg-gray-950 hover:border-black transition-all hover:shadow-lg cursor-pointer flex-wrap text-white"
+                className="mb-4 flex sm:justify-normal justify-center gap-5 items-center border-[1px] border-gray-600 rounded-lg p-2 mx-4 hover:bg-gray-950 hover:border-black transition-all hover:shadow-lg cursor-pointer flex-wrap text-white"
               >
-                <h2 className="font-bold w-[200px]">{item.titleInfo}</h2>
-                <p className="w-[150px]">{item.dateInfo}</p>
-                <p className="w-[200px]">{item.typeInfo}</p>
+                <h2 className="font-bold w-[200px] sm:text-left text-center">{item.titleInfo}</h2>
+                <p className="w-[150px] sm:text-left text-center">{item.dateInfo}</p>
+                <p className="w-[200px] sm:text-left text-center">{item.typeInfo}</p>
                 <div className="flex flex-col justify-center items-center">
                   <div>
                     {item.waite ? (
