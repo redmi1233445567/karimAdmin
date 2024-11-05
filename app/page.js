@@ -172,7 +172,7 @@ export default function Home() {
                 <h2 className="font-bold w-[200px] sm:text-left text-center">{item.titleInfo}</h2>
                 <p className="w-[150px] sm:text-left text-center">{item.dateInfo}</p>
                 <p className="w-[200px] sm:text-left text-center">{item.typeInfo}</p>
-                <div className="flex flex-col justify-center items-center">
+                <div className="flex flex-col justify-center items-center w-[200px]">
                   <div>
                     {item.waite ? (
                       <div className="flex gap-3">
